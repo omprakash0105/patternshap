@@ -1,0 +1,23 @@
+package task;
+import java.util.Scanner;
+class pattern {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+       
+        
+        int i, j;
+        s.close();
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= 5; j++) {
+                if (j == i) {
+                    System.out.print("*");
+                } else if (j == 5 - (i - 1)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
